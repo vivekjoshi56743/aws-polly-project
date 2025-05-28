@@ -1,0 +1,79 @@
+/* ImageUpload.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: #fdfdfd;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+}
+
+.container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+input[type="file"] {
+  border: none;
+  background-color: #e9f0ff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #1e40af;
+}
+
+button.upload-btn {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button.upload-btn:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+button.upload-btn:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.status {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+audio {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
